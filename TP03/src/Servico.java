@@ -28,4 +28,29 @@ public class Servico {
 	public boolean solicitar() {
 		return true;
 	}
+
+	public String getTipoDeServico() {
+		return tipoDeServico;
+	}
+
+	public void setTipoDeServico(String tipoDeServico) {
+		this.tipoDeServico = tipoDeServico;
+	}
+
+	public String getFormacao() {
+		return formacao;
+	}
+
+	public void setFormacao(String formacao) {
+		this.formacao = formacao;
+	}
+
+	public String getEspecificacao() {
+		return especificacao;
+	}
+
+	public void setEspecificacao(String especificacao) {
+		this.especificacao = especificacao;
+	}
+	
 }

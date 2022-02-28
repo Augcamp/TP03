@@ -12,6 +12,22 @@ public class Pedido {
 	public boolean aceitar_recusar() {
 		return true;
 	}
+
+	public PerfilDoCliente getPerfilCliente() {
+		return perfilCliente;
+	}
+
+	public void setPerfilCliente(PerfilDoCliente perfilCliente) {
+		this.perfilCliente = perfilCliente;
+	}
+
+	public Servico getServicos() {
+		return servicos;
+	}
+
+	public void setServicos(Servico servicos) {
+		this.servicos = servicos;
+	}
 	
 }
 
