@@ -8,8 +8,7 @@ public class PerfilDoProfissional extends Perfil {
 	private Pedido pedidos[]= new Pedido[1];
 	
 	
-	public boolean visualizarPedidos() {
-		return true;
+	public void visualizarPedidos() {
 	}
 
 	
