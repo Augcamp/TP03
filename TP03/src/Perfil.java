@@ -1,3 +1,5 @@
+
+/*
 import java.awt.Image;
 import java.util.Date;
 import java.util.Scanner;
@@ -84,4 +86,4 @@ public abstract class Perfil {
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-}
+}*/

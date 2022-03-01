@@ -1,4 +1,4 @@
-
+/*
 public class Contrato {
 
 	private PerfilDoProfissional perfilProfissional;
@@ -36,4 +36,4 @@ public class Contrato {
 	public boolean cancelar() {
 		return true;
 	}
-}
+}*/

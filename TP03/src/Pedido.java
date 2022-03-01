@@ -1,4 +1,4 @@
-
+/*
 public class Pedido {
 
 	private PerfilDoCliente perfilCliente;
@@ -30,7 +30,7 @@ public class Pedido {
 	}
 	
 }
-
+*/
 
 
 	

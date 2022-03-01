@@ -1,4 +1,4 @@
-
+/*
 public class PerfilDoCliente extends Perfil {
 
 	
@@ -10,4 +10,4 @@ public class PerfilDoCliente extends Perfil {
 		return true;
 	}
 	
-}
+}*/

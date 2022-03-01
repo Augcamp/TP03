@@ -1,4 +1,4 @@
-
+/*
 public class Recibo {
 
 	private float valorPago;
@@ -51,4 +51,4 @@ public class Recibo {
 		this.dadosPessoais = dadosPessoais;
 	}
 
-}
+}*/

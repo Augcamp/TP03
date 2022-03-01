@@ -11,14 +11,134 @@ public class Endereco {
 	
 	
 	public Endereco(String pais, String cep, String cidade, String logradouro, String uf) {
-		super();
-		this.pais = pais;
-		this.cep = cep;
-		this.cidade = cidade;
-		this.logradouro = logradouro;
-		this.uf = uf;
+		pais = pais;
+		cep = cep;
+		cidade = cidade;
+		logradouro = logradouro;
+		uf = uf;
 	}
 
+
+
+	public void cadastrar() {
+		
+		System.out.println("Digite o nome do seu pais: ");
+		pais=ler.nextLine();
+		
+		System.out.println("Digite o seu cep: ");
+		cep=ler.nextLine();
+		
+		System.out.println("Digite sua cidade: ");
+		cidade=ler.nextLine();
+		
+		System.out.println("Digite o seu logradouro: ");
+		logradouro=ler.nextLine();
+		
+		System.out.println("Digite sua UF: ");
+		uf=ler.nextLine();
+		
+	}
+	
+	public void editar() {
+		String desejada, nova;
+
+        System.out.println("Escolha o que deseja editar: ");
+        desejada = ler.nextLine();
+        desejada = desejada.toLowerCase(); 
+
+        switch (desejada) {
+            case "pais":
+            	System.out.println(pais);
+                System.out.println("Digite o novo pais: ");
+                nova = ler.nextLine();
+                pais = pais.replace(pais, nova);       
+                System.out.println(pais);
+                break;
+            
+            case "cep":
+            	
+                System.out.println("Digite o novo cep: ");
+                nova = ler.nextLine();
+                cep = cep.replace(cep, nova);               
+               
+                
+                break;
+            
+            case "cidade":
+            	System.out.println("Digite a nova cidade: ");
+                nova = ler.nextLine();
+                cidade = cidade.replace(cidade, nova);  
+                
+                break;
+
+            case "logradouro":
+            	System.out.println("Digite o novo logradouro: ");
+                nova = ler.nextLine();
+                logradouro = logradouro.replace(logradouro, nova);  
+                
+                break;
+
+            case "uf":
+            	System.out.println("Digite a nova UF: ");
+                nova = ler.nextLine();
+                uf = uf.replace(uf, nova);  
+                
+                break;
+            
+            default:
+                break;
+        }
+		
+	}
+	
+	public void deletar() {
+		String desejada;
+
+        System.out.println("Escolha o que deseja deletar: ");
+        desejada = ler.nextLine();
+        desejada = desejada.toLowerCase(); 
+
+        switch (desejada) {
+            case "pais":
+            	
+                pais = pais.replace(pais, "pais não cadastrado");       
+              
+                break;
+            
+            case "cep":
+
+                cep = cep.replace(cep, "Cep não cadastrado");                  
+                
+                break;
+            
+            case "cidade":
+
+                cidade = cidade.replace(cidade, "Cidade não cadastrada");  
+                
+                break;
+
+            case "logradouro":
+            	
+                logradouro = logradouro.replace(logradouro, "Logradouro não cadastrado");  
+                
+                break;
+
+            case "uf":
+           
+                uf = uf.replace(uf, "UF não cadastrada");  
+                
+                break;
+            
+            default:
+                break;
+        }
+	}
+	
+	public void visualizar() {
+		System.out.printf("%s - %s - %s - %s - %s",pais, cep, cidade, logradouro, uf);
+	}
+	
+	
 	public String getPais() {
 		return pais;
 	}
@@ -58,37 +178,6 @@ public class Endereco {
 	public void setUf(String uf) {
 		this.uf = uf;
 	}
-
-	public void cadastrar() {
-		
-		System.out.println("Digite o nome do seu pais: ");
-		pais=ler.nextLine();
-		
-		System.out.println("Digite o seu cep: ");
-		cep=ler.nextLine();
-		
-		System.out.println("Digite sua cidade: ");
-		cidade=ler.nextLine();
-		
-		System.out.println("Digite o seu logradouro: ");
-		logradouro=ler.nextLine();
-		
-		System.out.println("Digite sua UF: ");
-		uf=ler.nextLine();
-		
-	}
-	
-	public void editar() {
-		System.out.println("Escolha o que deseja editar: "
-				+ "P - Para País, C - Para Cep, D -  Para Cidade, L - Para Lograoduro, U - Para UF.");
-		
-	}
-	
-	public void deletar() {
-
-	}
-	
-	public void visualizar() {
-
-	}
 }
+
+

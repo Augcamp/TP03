@@ -1,6 +1,6 @@
-
+/*
 public class PerfilDoProfissional extends Perfil {
-
+	
 	
 	private Servico servicos[]= new Servico[1];
 	private Contato contatos[]= new Contato[1];;
@@ -12,4 +12,4 @@ public class PerfilDoProfissional extends Perfil {
 	}
 
 	
-}
+}*/

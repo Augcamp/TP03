@@ -2,8 +2,15 @@
 public class Simulador {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Contato e = new Contato("null","null");
+		
+		e.cadastrar();
+		e.editar();
+		e.deletar();
+		e.visualizar();
+		
+		
 	}
 
 }
