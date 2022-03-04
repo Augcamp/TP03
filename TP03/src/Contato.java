@@ -5,13 +5,13 @@ public class Contato {
 	static Scanner ler=new Scanner(System.in);
 	private String telefone;
 	private String email;
-	
+	//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	public Contato(String telefone, String email) {
-		telefone = telefone;
-		email = email;
+		this.telefone = telefone;
+		this.email = email;
 		
 	}
-	
+	//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
 	public void cadastrar() {
 		System.out.println("Digite o seu telefone:");
@@ -62,13 +62,13 @@ public class Contato {
         switch (desejada) {
             case "telefone":
             	
-                telefone = telefone.replace(telefone, "Telefone não cadastrado");       
+                telefone = telefone.replace(telefone, "Telefone nï¿½o cadastrado");       
               
                 break;
             
             case "email":
 
-                email = email.replace(email, "Email não cadastrado");                  
+                email = email.replace(email, "Email nï¿½o cadastrado");                  
                 
                 break;
             
@@ -80,7 +80,7 @@ public class Contato {
 	public void visualizar() {
 		System.out.printf("%s - %s",telefone, email);
 	}
-	
+	//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	public String getTelefone() {
 		return telefone;
 	}

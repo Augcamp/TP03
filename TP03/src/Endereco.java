@@ -11,11 +11,11 @@ public class Endereco {
 	
 	
 	public Endereco(String pais, String cep, String cidade, String logradouro, String uf) {
-		pais = pais;
-		cep = cep;
-		cidade = cidade;
-		logradouro = logradouro;
-		uf = uf;
+		this.pais = pais;
+		this.cep = cep;
+		this.cidade = cidade;
+		this.logradouro = logradouro;
+		this.uf = uf;
 	}
 
 
@@ -101,31 +101,31 @@ public class Endereco {
         switch (desejada) {
             case "pais":
             	
-                pais = pais.replace(pais, "pais não cadastrado");       
+                pais = pais.replace(pais, "pais nï¿½o cadastrado");       
               
                 break;
             
             case "cep":
 
-                cep = cep.replace(cep, "Cep não cadastrado");                  
+                cep = cep.replace(cep, "Cep nï¿½o cadastrado");                  
                 
                 break;
             
             case "cidade":
 
-                cidade = cidade.replace(cidade, "Cidade não cadastrada");  
+                cidade = cidade.replace(cidade, "Cidade nï¿½o cadastrada");  
                 
                 break;
 
             case "logradouro":
             	
-                logradouro = logradouro.replace(logradouro, "Logradouro não cadastrado");  
+                logradouro = logradouro.replace(logradouro, "Logradouro nï¿½o cadastrado");  
                 
                 break;
 
             case "uf":
            
-                uf = uf.replace(uf, "UF não cadastrada");  
+                uf = uf.replace(uf, "UF nï¿½o cadastrada");  
                 
                 break;
             
