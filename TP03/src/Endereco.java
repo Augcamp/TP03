@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Endereco {
-
+	//ATRIBUTOS:
 	static Scanner ler=new Scanner(System.in);
 	private String pais;
 	private String cep;
@@ -9,6 +9,7 @@ public class Endereco {
 	private String logradouro;
 	private String uf;
 	//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//CONSTRUTOR:
 	public Endereco(String pais, String cep, String cidade, String logradouro, String uf) {
 		this.pais = pais;
 		this.cep = cep;
@@ -17,6 +18,7 @@ public class Endereco {
 		this.uf = uf;
 	}
 	//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//METODOS:
 	public void cadastrar() {
 		System.out.println("Digite o nome do seu pais: ");
 		pais=ler.nextLine();
@@ -38,7 +40,7 @@ public class Endereco {
 		logradouro=ler.nextLine();
 		System.out.println(" "); 
 	}
-	
+	//---//------------//---//
 	public void editar() {
 		String desejada, nova;
 
@@ -89,7 +91,7 @@ public class Endereco {
                 break;
         }
 	}
-	
+	//---//------------//---//
 	public void deletar() {
 		pais = pais.replace(pais, "Pais nao cadastrado");       
 		cep = cep.replace(cep, "CEP nao cadastrado");                  
@@ -97,48 +99,49 @@ public class Endereco {
 		logradouro = logradouro.replace(logradouro, "Logradouro nao cadastrado");  
 		uf = uf.replace(uf, "UF nao cadastrada");  
 	}
-	
+	//---//------------//---//
 	public void visualizar() {
 		System.out.printf("Pais: %s\nCEP: %s\nCidade: %s\nLogradouro: %s\nUF: %s",pais, cep, cidade, logradouro, uf);
 		System.out.println(" "); 
 	}
 	//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//GETS E SETS:
 	public String getPais() {
 		return pais;
 	}
-
+	//---//------------//---//
 	public void setPais(String pais) {
 		this.pais = pais;
 	}
-
+	//---//------------//---//
 	public String getCep() {
 		return cep;
 	}
-
+	//---//------------//---//
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-
+	//---//------------//---//
 	public String getCidade() {
 		return cidade;
 	}
-
+	//---//------------//---//
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
 	}
-
+	//---//------------//---//
 	public String getLogradouro() {
 		return logradouro;
 	}
-
+	//---//------------//---//
 	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
 	}
-
+	//---//------------//---//
 	public String getUf() {
 		return uf;
 	}
-
+	//---//------------//---//
 	public void setUf(String uf) {
 		this.uf = uf;
 	}
